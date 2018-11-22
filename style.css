@@ -6,6 +6,11 @@ Author URI: www.facebook.com/oscar.hermawan90
 Description: Testing template
 */
 
+/* .positionFix{
+  position: fixed;
+  z-index: 999;
+} */
+
 body{
   margin: 0 auto;
   background-color: #fbfbfb;
@@ -14,6 +19,33 @@ body{
 ul {
   list-style: none;
   padding: 0px;
+}
+
+.navigasi{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.navigasi li{
+  display: inline-block;
+  padding-right:50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navigasi a{
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.titlePage{
+  text-align: center;
+}
+
+.descriptionPage{
+  text-align: center
 }
 
 .news-post img{
@@ -30,6 +62,12 @@ ul {
   color:white;
   padding:10px;
   margin-top:50px;
+  margin-bottom: 100px;
+}
+
+.margin-top-btn a{
+  text-decoration: none;
+  color:white;
 }
 
 .box-packages ul{
@@ -96,6 +134,7 @@ ul {
 
 .seperlima-box a{
   text-decoration: none;
+  color:#c0c0c0;
 }
 
 .clearfloat{

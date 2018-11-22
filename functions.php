@@ -15,7 +15,8 @@
   add_action('wp_enqueue_scripts', 'link_css_stylesheet');
   register_nav_menus(array(
     'packages' => 'Footer Menu Packages',
-    'about' => 'Footer Menu About'
+    'about' => 'Footer Menu About',
+    'top_menu' => 'Navigasi Top'
   ))
 
 

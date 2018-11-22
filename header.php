@@ -6,14 +6,30 @@
       <?php wp_head(); ?>
   </head>
   <body>
-    <header>
-    </header>
 
     <div class="row">
+
       <!-- DATE FROM HEADER -->
+      <div class="col-md-12 positionFix">
+        <header class="navigasi">
+            <?php
+              $args = array('theme_location' => 'top_menu');
+              wp_nav_menu($args);
+            ?>
+        </header>
+      </div>
+
       <div class="col-md-1">
       </div>
       <div class="col-md-10">
+        <div class="titlePage">
+          <p><?php bloginfo('name'); ?></p>
+        </div>
+        <div class="descriptionPage">
+          <p><?php bloginfo('description'); ?></p>
+        </div>
+
+
         <div class="row">
           <?php
           global $query_string;
@@ -38,7 +54,7 @@
           endif;
           ?>
         </div>
-        <center><button type="button" class=" margin-top-btn">SEE ALL NEWS</button></center>
+        <center><button type="button" class="margin-top-btn"><a href="">SEE ALL NEWS</a></button></center>
       </div>
       <div class="col-md-1">
       </div>
