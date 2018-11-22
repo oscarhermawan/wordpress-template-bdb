@@ -42,10 +42,15 @@ ul {
 
 .titlePage{
   text-align: center;
+  font-size: 6vw;
+  font-weight: bold;
 }
 
 .descriptionPage{
-  text-align: center
+  margin-top: -20px;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
 .news-post img{
@@ -70,13 +75,18 @@ ul {
   color:white;
 }
 
-.box-packages ul{
+.description-on-tour{
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+/* .box-packages ul{
   font-size: 13px;
 }
 
 .box-packages ul li:before{
   content: '✓';
-}
+} */
 
 .background-color-gray{
   background-color: #38404B;

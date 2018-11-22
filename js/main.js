@@ -1,10 +1,11 @@
 var check_tour_btn = document.getElementById("check-tour-btn");
-var var_news_view = document.getElementsByClassName("news_view");
+// var var_news_view = document.getElementsByClassName("news_view");
+var var_news_view = document.getElementById("tour-packages");
 var data;
 
 check_tour_btn.addEventListener("click", function(){
   var xttp = new XMLHttpRequest();
-  xttp.open('GET', 'http://localhost:8080/wordpress/wp-json/wp/v2/posts');
+  xttp.open('GET', 'http://bdb.helloangga.com/api/packages');
   xttp.onload = function(){
     if(xttp.status >= 200 && xttp.status < 400){
       data = JSON.parse(xttp.responseText);
@@ -22,6 +23,26 @@ check_tour_btn.addEventListener("click", function(){
 })
 
 function motorView(data){
-  // console.log('dataNYAA', data[0])
-  // var_news_view[0].innerHTML = 'oke adad adad ada dadad'
+  console.log('dataNYAA', data)
+  var ourString = ''
+  for(i = 0; i < data.length; i++){
+    ourString +=
+    '<div class="col-md-6">' +
+      '<div class="box-for-padding">' +
+        '<img src="http://wallpaperlepi.com/wp-content/uploads/2014/09/KTM-RC8-Motor-Sport-Wallpaper.jpg" alt="1/2 Day Tabanan Jungle" width="100%"> <br/>' +
+          '<div class="box-packages">' +
+            '<i> Level : ' + data[i].level +'</i>'+
+            '<p>'+ data[i].name + '<p>'+
+                '<div class="description-on-tour">' + data[i].description  + '</div>' +
+            '<button type="button" class="btn btn-light">SEE DETAILS</button> &nbsp; <button type="button" class="btn btn-danger">BOOK NOW</button>' +
+          '</div>' +
+      '</div>' +
+    '</div>'
+  }
+  console.log('hasil = ', ourString)
+  var_news_view.innerHTML = ourString;
+}
+
+function tourPackages(data){
+
 }
