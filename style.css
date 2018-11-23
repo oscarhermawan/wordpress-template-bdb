@@ -80,14 +80,6 @@ ul {
   margin-bottom: 30px;
 }
 
-/* .box-packages ul{
-  font-size: 13px;
-}
-
-.box-packages ul li:before{
-  content: '✓';
-} */
-
 .background-color-gray{
   background-color: #38404B;
 }
@@ -97,6 +89,13 @@ ul {
   color: white;
   padding-top: 20px;
   padding-bottom: 25px;
+}
+
+.content-page img{
+  width:80%;
+  height: auto;
+  margin-left:10%;
+  margin-right: 10%;
 }
 
 .box-packages{
@@ -112,6 +111,19 @@ ul {
 .box-for-padding{
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.wrapper-gallery{
+  margin-bottom: 100px;
+}
+
+.wrapper-gallery a{
+  text-decoration: none;
+  color:#38404B;
+}
+
+.wrapper-gallery center{
+  margin-top: 20px;
 }
 
 .box-gallery{

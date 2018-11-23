@@ -12,6 +12,11 @@
         <p><?php bloginfo('description'); ?></p>
       </div>
       <div class="row">
+
+        <div class="col-md-12">
+          <h2>LATEST NEWS</h1>
+          <p>HERE YOU FIND NEWS ABOUT OUR BALI SURF CAMPS, SURF SPOTS & SPECIALS</p>
+        </div>
         <?php
         global $query_string;
         query_posts( 'category_name=News&posts_per_page=3' );
@@ -136,7 +141,7 @@
       <!-- END PACKAGES -->
 
       <!-- FOR GALLERY -->
-      <div class="row">
+      <div class="row wrapper-gallery">
         <div class="col-md-12">
           <div class="box-gallery">
             <img src="http://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.jpg" alt="img">
@@ -169,6 +174,9 @@
           <div class="box-gallery">
             <img src="https://images.pexels.com/photos/68147/waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpeg?cs=srgb&dl=landscape-nature-water-68147.jpg&fm=jpg" alt="img">
           </div>
+        </div>
+        <div class="col-md-12">
+          <center><a href="#"><img src="https://seeklogo.com/images/I/instagram-new-2016-logo-4773FE3F99-seeklogo.com.png" width="20px" alt="ig-logo" />  &nbsp; FOLLOW US ON INSTAGRAM</a></center>
         </div>
       </div>
       <!-- END FOR GALLERY -->
