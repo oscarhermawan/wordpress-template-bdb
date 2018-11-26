@@ -1,3 +1,4 @@
+<!-- SINGLE PHP -->
 <?php
   get_header();?>
   <div class="row">

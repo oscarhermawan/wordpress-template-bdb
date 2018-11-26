@@ -1,7 +1,11 @@
 <?php
   get_header();?>
+  <div>axx</div>
+  <video autoplay muted loop id="myVideo">
+    <source src="http://localhost:8080/wordpress/wp-content/uploads/2018/11/balidirtbikes_2018_compressed.webm" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
   <div class="row">
-
     <div class="col-md-1">
     </div>
     <div class="col-md-10">
@@ -44,7 +48,6 @@
     </div>
     <div class="col-md-1">
     </div>
-
 
     <!-- DATE AND PERSON FROM HEADER -->
     <div class="col-md-12 background-dark-gray">
@@ -93,9 +96,10 @@
     </div>
     <!-- END DATE AND PERSON FROM HEADER -->
 
-
     <div class="col-md-1"> </div>
+
     <div class="col-md-10">
+
       <!-- PACKAGES -->
       <div class="row" id="tour-packages">
         <div class="col-md-6">
@@ -184,7 +188,6 @@
     </div>
     <div class="col-md-1"> </div> <!-- JUST FOR 1-10- AND 1 FOR CLOSE TAG GRID -->
   </div>
-
 <?php
   get_footer();
 ?>
