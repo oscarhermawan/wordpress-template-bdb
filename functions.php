@@ -4,6 +4,15 @@
       wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/css/bootstrap.css');
       wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js');
       wp_enqueue_script('main-js', get_template_directory_uri() . '/js/main.js', NULL, 1.0, true);
+
+      //Jquery CSS
+      wp_enqueue_style('jquery-css', get_template_directory_uri() . '/css/jquery-ui.css');
+
+      //Jquery JS
+      wp_enqueue_script('jquery-js', get_template_directory_uri() . '/js/jquery-1.12.4.js', NULL, 1.0, false);
+      wp_enqueue_script('jquery-ui', get_template_directory_uri() . '/js/jquery-ui.js', NULL, 1.0, false);
+
+      //PARENT CSS
       wp_enqueue_style($parent_style, get_template_directory_uri() . '/style.css');
   }
 

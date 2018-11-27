@@ -70,4 +70,10 @@
   </footer>
     <?php wp_footer(); ?>
   </body>
+
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 </html>
