@@ -1,7 +1,7 @@
 <!-- SINGLE PHP -->
 <?php
   get_header();?>
-  <div class="row">
+  <div class="row bg">
     <div class="col-md-1"> </div>
     <div class="col-md-10">
 
@@ -9,7 +9,7 @@
         if(have_posts()):
           while(have_posts()): the_post(); ?>
             <div class="col-md-12">
-                <div class="titlePage">
+                <div class="titlePage-single-post">
                   <?php the_title();?>
                 </div>
                 <div class="content-page">

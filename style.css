@@ -45,12 +45,11 @@ ul {
 }
 
 .wrapper-content{
-  position:relative;
-  top:150px;
+  padding-top:150px;
 }
 
 .news-content{
-  margin-top: 550px;
+  margin-top:450px;
 }
 
 #myVideo {
@@ -62,10 +61,19 @@ ul {
 }
 
 .titlePage{
+  padding-top: 100px;
   text-align: center;
   font-size: 6vw;
   font-weight: bold;
   color: white;
+}
+
+.titlePage-single-post{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 6vw;
+  font-weight: bold;
+  color: black;
 }
 
 .descriptionPage{
